@@ -112,28 +112,17 @@
     grid-template-columns: repeat(1, 1fr); /* Single column on very small screens */
   }
 }
-@media only screen and (max-width: [device width]px) {
+@media only screen and (max-width: [device width]) {
   #about-pic{
     max-width: 100%;
     height: auto;
     margin: 0 auto; 
   }
   }
-  @media (max-width: [device width]px){
+  @media (max-width: [device width]){
   #popup{
     max-width: 90%;
   }
 }
-@media (prefers-color-scheme: dark){
-  Body{
-      background-color: black;
-      color: white;
-  }
-  }
-  @media (prefers-color-scheme: light){
-    Body{
-      background-color: white;
-      color: black;
-    }
-  }
+
  
