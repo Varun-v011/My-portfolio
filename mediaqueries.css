@@ -45,6 +45,7 @@
   .about-containers {
     margin-top: 0;
   }
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -102,27 +103,78 @@
   }
 }
 @media (max-width: 768px) {
-  #image-grid {
-    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+  #popup-content {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 17%; 
+    padding-top: 5%;
+    padding-bottom: 5%;
+   
   }
 }
 
 @media (max-width: 480px) {
-  #image-grid {
-    grid-template-columns: repeat(1, 1fr); /* Single column on very small screens */
+  #popup-content {
+    grid-template-columns: repeat(2, 1fr); /* Single column on very small screens */
   }
 }
-@media only screen and (max-width: [device width]) {
-  #about-pic{
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto; 
-  }
-  }
-  @media (max-width: [device width]){
+@media (max-width:768px){
   #popup{
-    max-width: 90%;
+    right: 20%;
+    left: .8%;
+    bottom: 40%;
+    height: 50%;
+    width: 100%;
+    z-index: 1; 
   }
 }
+@media (min-width: 768px) and (max-width: 1200px) {
+#popup{
+  position: absolute;  /* Positions the popup outside the container's flow */
+  top: 50%;  /* Positions vertically in the center */
+  left: 50%;  /* Positions horizontally in the center */
+  transform: translate(-50%, -50%);  /* Adjusts positioning for centered content */
+  z-index: 10;  /* Sets the stacking order to appear above other elements */
+  /* Add other styles for size, background, etc. */
+  background-color: #999;
+  border-radius: 30px;
+  padding: 20px;
+  border: 3px solid;
+  border-color: black;
+  height: 45rem;
+  width: 70rem;
+  left:  40%;
+  opacity: 1;
+  display: none;  /* Hides the popup by default */
+  transition: 1ms;
+}}
+@media (min-width: 1200px) {
+  #popup{
+    position: absolute;  /* Positions the popup outside the container's flow */
+    top: 50%;  /* Positions vertically in the center */
+    left: 50%;  /* Positions horizontally in the center */
+    transform: translate(-50%, -50%);  /* Adjusts positioning for centered content */
+    z-index: 10;  /* Sets the stacking order to appear above other elements */
+    /* Add other styles for size, background, etc. */
+    background-color: #999;
+    border-radius: 30px;
+    padding: 20px;
+    border: 3px solid;
+    border-color: black;
+    height: 45rem;
+    width: 70rem;
+    left:  40%;
+    opacity: 1;
+    display: none;  /* Hides the popup by default */
+    transition: 1ms;
+}
+  #popup-content {
+    grid-template-columns: repeat(3, 1fr);
+    
+ 
+  }
+}
+
+
+
 
  

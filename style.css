@@ -268,8 +268,7 @@ a:hover{
   
   .about-pic {
     border-radius: 2rem;
-    margin-left: 60px;
-    height: 380px;
+   
   }
   
   .arrow {
@@ -428,34 +427,30 @@ a:hover{
   }
  #popup {
       position: absolute;  /* Positions the popup outside the container's flow */
-      top: 50%;  /* Positions vertically in the center */
-      left: 50%;  /* Positions horizontally in the center */
-      transform: translate(-50%, -50%);  /* Adjusts positioning for centered content */
-      z-index: 10;  /* Sets the stacking order to appear above other elements */
-      /* Add other styles for size, background, etc. */
+       /* Positions horizontally in the center */
+       /* Adjusts positioning for centered content */
       background-color: #999;
       border-radius: 30px;
-      padding: 20px;
+      
       border: 3px solid;
       border-color: black;
-      height: 45rem;
-      width: 70rem;
-      left:  40%;
-      opacity: 1;
       display: none;  /* Hides the popup by default */
-      transition: 1ms;
+     
+      z-index: 1; 
     }
-    #image-grid {
+    #popup-content{
       display: grid; /* Set the container to a grid layout */
+     
       grid-gap: 10px; /* Spacing between images */
       /* Adjust width and height as needed */
-      grid-template-columns: repeat(3,1fr);  /* Three columns of equal width */  
-      grid-template-rows: repeat(2, 1fr);
+      
+      align-items: center;
     }
     
-    #image-grid img {
+    #popup-content img {
       width: 80%; /* Images fill the grid cell width */
       height: auto; /* Maintain image aspect ratio */
+      object-fit: contain;
       
     }
     #close-btn{
@@ -482,17 +477,7 @@ a:hover{
     #close-btn:hover{
       background-color: #999; /* Button hover effect */
     }
-    #blurred-background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-      backdrop-filter: blur(5px); /* Blur effect */
-      z-index: 10; /* Ensure it appears above other elements */
-      display: none; /* Initially hidden */
-    }
+ 
     
   
     
