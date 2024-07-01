@@ -477,7 +477,32 @@ a:hover{
     #close-btn:hover{
       background-color: #999; /* Button hover effect */
     }
- 
+ .img-2{
+  -webkit-filter: grayscale(0) blur(0);
+  filter: grayscale(0) blur(0);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+ }
+.img-2:hover {
+  -webkit-filter: grayscale(100%) blur(3px);
+  filter: grayscale(100%) blur(3px);
+}
+.img-2 .hovertext{
+  font-size: 2rem;
+  opacity: 0;
+  z-index: 10;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #060606;
+  text-shadow: 0 0 10px #000;
+  text-align: center;
+  width: 100%;
+}
+.img-2:hover .hovertext{
+  opacity: 1;
+}
     
   
     
